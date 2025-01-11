@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    /* justify-content: center; 
+    align-content: center; */
+   
+}
+
+.container {
+    max-width: 800px; /* Limits the width of the page to 1200px */
+    width: 100%; /* Ensures it adjusts for smaller screens */
+    padding: 20px; /* Adds space around the content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #00ffff; /* Neon accent color */
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00ffff; /* Neon accent color */
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #00cccc;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #00ffff; /* Neon accent color */
+}
+
+footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
