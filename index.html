@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="canonical" href="https://yourdomain.com">
-    <style href="styles.css"></style>
     <link rel="icon" href="images/icon.png" type="image/png">
 </head>
 <body>
@@ -19,12 +18,16 @@
         <img src="images/company_name_transparent_background.png" alt="Unprecedented Studios Logo" width="100%">
          <header>
              <nav>
-                <ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-links">
                     <li><a href="#sunet_arena">Sunset Arena</a></li>
                     <li><a href="#projects">Other Projects</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-
                 </ul>
             </nav> 
         </header> 
@@ -47,7 +50,7 @@
                             Multiple control options allow for anyone to jump right into the action from single stick controls with auto-aiming, to standard twin-stick shooting.</p>
                     </div>
                     <div><iframe src="https://www.youtube.com/embed/99ti38osBnA?si=j9Uikzyzi7NySnbm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                    <a href="https://store.steampowered.com/app/3050200/Sunset_Arena/" class="cta-button">Check out Sunset Arena on Steam</a>
+                    <a href="https://store.steampowered.com/app/3050200/Sunset_Arena/" class="cta-button" target="_blank">Check out Sunset Arena on Steam</a>
                 </div>
             </div>
         </section>
@@ -60,7 +63,7 @@
                         
                         You can find small projects and game jams on 
                     <a href="https://unprecedented.itch.io/">itch.io</a> or you can find some of my prototypes on <a href='https://github.com/marshallcouch/'>github</a>.</p>
-                    <a href="https://unprecedented.itch.io/2024-gmtk-game-jam"><img src="images\tap_root.png" alt="image of taproot game"></a>
+                    <a href="https://unprecedented.itch.io/2024-gmtk-game-jam" target="_blank"><img src="images/tap_root.png" alt="Taproot Game"></a>
                 </div>
             </div>
         </section>
@@ -81,13 +84,12 @@
             <div>
                 <h2>Contact</h2>
                 
-                <p><a href="https://discord.gg/S8hkJuaVjv" class="cta-button">Join the Discord Community</a></p>
+                <p><a href="https://discord.gg/S8hkJuaVjv" class="cta-button" target="_blank">Join the Discord Community</a></p>
                 <ul class="social-media">
-                    <li><a href="https://x.com/unprecstudios">Twitter</a></li>
-                    <li><a href="https://unprecedented.itch.io/">Itch.io</a></li>
-                    <li><a href="https://store.steampowered.com/app/3050200/Sunset_Arena/">Steam</a></li>
-                    <li><a href="https://discord.gg/S8hkJuaVjv">Discord</a></li>
-                    <li><a href="mailto:feedback@unprecedentedstudios.com" >Email</a></li>
+                    <li><a href="https://x.com/unprecstudios" target="_blank">Twitter</a></li>
+                    <li><a href="https://unprecedented.itch.io/" target="_blank">Itch.io</a></li>
+                    <li><a href="https://discord.gg/S8hkJuaVjv" target="_blank">Discord</a></li>
+                    <li><a href="mailto:feedback@unprecedentedstudios.com">Email</a></li>
                 </ul>
             </div>
         </section>
@@ -96,5 +98,15 @@
             <p>&copy; 2025 Unprecedented Studios. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            if (navLinks.className === "") {
+                navLinks.className = "responsive";
+            } else {
+                navLinks.className = "";
+            }
+        }
+    </script>
 </body>
 </html>

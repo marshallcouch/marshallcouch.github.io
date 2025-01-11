@@ -6,11 +6,13 @@ body {
     color: #f0f0f0;
     /* justify-content: center; 
     align-content: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block; /* Remove flex properties */
+    justify-content: initial; /* Remove flex properties */
+    align-items: initial; /* Remove flex properties */
     min-height: 100vh;
     text-align: center; /* Center the text within the body */
+    line-height: 1.6; /* Improve readability */
+    scroll-behavior: smooth; /* Smooth scroll effect */
 }
 
 h2, h3 {
@@ -68,10 +70,12 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     vertical-align: middle;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transform transition */
 }
 
 nav a:hover {
     color: #00ffff; /* Neon accent color */
+    transform: scale(1.1); /* Add scale effect */
 }
 
 section {
