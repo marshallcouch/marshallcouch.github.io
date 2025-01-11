@@ -54,13 +54,20 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    vertical-align: middle;
+}
+
+iframe {
+    max-width: 560px;
+    max-height: 315px;
 }
 
 nav a {
     color: #f0f0f0;
     text-decoration: none;
     font-weight: 700;
+    vertical-align: middle;
 }
 
 nav a:hover {
@@ -76,8 +83,8 @@ section {
     gap: 2rem;
 }
 
-section img {
-    max-width: 45%;
+img {
+    max-width: 75%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -86,7 +93,7 @@ section img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -104,6 +111,7 @@ section img {
     float: right;
     margin-left: 2rem;
     max-width: 200px;
+    width:40%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -115,21 +123,18 @@ section img {
 }
 
 #sunset_arena_content {
-    display: flex;
-    align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
     text-align: left; /* Align text to the left */
+    width:auto;
+    flex-wrap: wrap;
 }
 
 #sunset_arena_hero {
-    max-width: 45%;
+    width:50%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#sunset_arena_description {
-    max-width: 50%;
+    padding:16px;
+    float:right;
 }
 
 .project {
@@ -139,15 +144,7 @@ section img {
     text-align: center;
     margin-bottom: 2rem;
 }
-.sunset_arena_hero{
-    float:left
-}
-.sunset_arena_description{
-    float:right
-}
-.headshot{
-    float:left
-}
+
 .project:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -205,3 +202,5 @@ footer {
 iframe {
     padding: 1rem 0; /* Add padding around the iframe */
 }
+
+
