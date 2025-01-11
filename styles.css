@@ -2,11 +2,30 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a, #333);
     color: #f0f0f0;
     /* justify-content: center; 
     align-content: center; */
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; /* Center the text within the body */
+}
+
+h2, h3 {
+    font-family: 'Press Start 2P', cursive; /* Synthwave font */
+    color: #00ffff; /* Neon accent color */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .container {
@@ -14,6 +33,9 @@ body {
     width: 100%; /* Ensures it adjusts for smaller screens */
     padding: 20px; /* Adds space around the content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin: auto;
 }
 
 header {
@@ -47,26 +69,105 @@ nav a:hover {
 
 section {
     padding: 2rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+section img {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#about-content {
+    display: block;
+    text-align: left; /* Align text to the left */
+}
+
+#about-content p {
+    margin: 0;
+    padding: 8px;
+}
+
+#about-content img {
+    float: right;
+    margin-left: 2rem;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sunset_arena_content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: left; /* Align text to the left */
+}
+
+#sunset_arena_hero {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sunset_arena_description {
+    max-width: 50%;
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 2rem;
+}
+.sunset_arena_hero{
+    float:left
+}
+.sunset_arena_description{
+    float:right
+}
+.headshot{
+    float:left
+}
+.project:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .cta-button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: #00ffff; /* Neon accent color */
     color: #1a1a1a;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #00cccc;
+    color: #1a1a1a;
+    transform: scale(1.1);
 }
 
 .social-media {
@@ -77,17 +178,30 @@ section {
     gap: 1rem;
 }
 
-.social-media a {
-    color: #f0f0f0;
+a {
+    color: #00ffff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.social-media a:hover {
-    color: #00ffff; /* Neon accent color */
+a:hover {
+    color: #ff00ff; /* Neon accent color */
+    transform: scale(1.1);
 }
 
 footer {
     background-color: #333;
     padding: 1rem;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    padding: 1rem 0; /* Add padding around the iframe */
 }
