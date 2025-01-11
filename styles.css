@@ -63,6 +63,8 @@ nav ul {
 iframe {
     max-width: 560px;
     max-height: 315px;
+    width:auto;
+    height:auto;
 }
 
 nav a {
