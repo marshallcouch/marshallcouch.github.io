@@ -268,6 +268,7 @@ form input, form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: var(--font-family-body);
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
 }
 
 form button {
@@ -297,4 +298,55 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /* Hide header navigation on mobile */
+    nav ul {
+        display: none;
+    }
+
+    /* Stack cards vertically */
+    .service-categories,
+    .pricing-options,
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+
+    .service-category,
+    .pricing-option,
+    .portfolio-item {
+        max-width: 90%; /* Allow cards to take more width */
+        margin-bottom: 2rem; /* Add space between stacked cards */
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    form {
+        max-width: none; /* Allow form to take full width on mobile */
+    }
 }
